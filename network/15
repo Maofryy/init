@@ -1,0 +1,3 @@
+# Il faudrait pouvoir ecrire dans le registre des entrees DNS pour changer l'adresse pointee par intra.42.fr
+# donc avec cat /etc/hosts on aurait quelque chose du genre :
+
