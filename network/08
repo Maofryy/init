@@ -1,2 +1,6 @@
-On peut regarder quels serveurs DNS utilise le site slash16.org et ainsi trouver :
-
+On peut regarder quels serveurs DNS utilise le site slash16.org et ainsi trouver avec "whois slash16.org" : 
+Name Server: NS-1236.AWSDNS-26.ORG
+Name Server: NS-144.AWSDNS-18.COM
+Name Server: NS-686.AWSDNS-21.NET
+Name Server: NS-1989.AWSDNS-56.CO.UK
+Who is actually provided by Amazon Web services

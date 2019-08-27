@@ -1,3 +1,5 @@
 # Il faudrait pouvoir ecrire dans le registre des entrees DNS pour changer l'adresse pointee par intra.42.fr
 # donc avec cat /etc/hosts on aurait quelque chose du genre :
-
+domain 42.fr
+nameserver 46.19.122.85
+nameserver 10.51.1.43

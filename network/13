@@ -1,1 +1,2 @@
-# dig +short -x 10.51.1.81 IP DNS
+# dig +short -x 10.11.12.6 : 
+e1r12p6.42.fr.
