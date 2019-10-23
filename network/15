@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mbenhass <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/23 11:04:58 by mbenhass          #+#    #+#              #
+#    Updated: 2019/10/23 11:05:08 by mbenhass         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # Il faudrait pouvoir ecrire dans le registre des entrees DNS pour changer l'adresse pointee par intra.42.fr
 # donc avec cat /etc/hosts on aurait quelque chose du genre :
 domain 42.fr

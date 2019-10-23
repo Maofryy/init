@@ -1,1 +1,13 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    14                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mbenhass <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/23 11:04:55 by mbenhass          #+#    #+#              #
+#    Updated: 2019/10/23 11:04:56 by mbenhass         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # On peut aller regarder dans un fichier presque config mais pas .conf : a /etc/host on devrait pouvoir lire les entrees DNS
