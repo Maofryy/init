@@ -1,0 +1,32 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mbenhass <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/23 13:29:29 by mbenhass          #+#    #+#              #
+#    Updated: 2019/10/23 13:31:11 by mbenhass         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+if [ $EUID -ne 0 ]
+then
+	echo "Please run as root."
+	exit 1
+fi
+
+if [ $# -eq 0 ] ; then
+	echo "Please provide a login."
+	exit 1
+fi
+
+USER=`cat /etc/passwd | cut -d ":" -f 1 | grep -x $1`
+
+if [ -z $USER ] ; then
+	echo "$1 doesn't exist in passwd database."
+	exit 1
+fi
+
+pkill -u "$USER"
+deluser --force --remove-home "$USER"
