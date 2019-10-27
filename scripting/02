@@ -1,4 +1,6 @@
+#!/bin/bash
 # **************************************************************************** #
+#
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    02                                                 :+:      :+:    :+:    #
@@ -12,20 +14,22 @@
 
 if [ $EUID -ne 0 ]
 then
-	echo "Please run as root."
-	exit 1
+	echo "Need root access to proceed"
+	exit
 fi
 
-if [ $# -eq 0 ] ; then
-	echo "Please provide a login."
-	exit 1
+if [ $# -eq 0 ]
+then
+	echo "usage : ./02 [login_to_remove]"
+	exit
 fi
 
 USER=`cat /etc/passwd | cut -d ":" -f 1 | grep -x $1`
 
-if [ -z $USER ] ; then
-	echo "$1 doesn't exist in passwd database."
-	exit 1
+if [ -z "$USER" ]
+then
+	echo "Invalid login : $1 was not found."
+	exit
 fi
 
 pkill -u "$USER"
